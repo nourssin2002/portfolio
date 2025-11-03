@@ -1,165 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Nourssin</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Nourssin</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-black text-white flex flex-col min-h-screen">
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header
+      class="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-blue-600"
+    >
+      <nav class="max-w-7xl mx-auto px-4">
+        <ul
+          class="flex justify-center gap-6 md:gap-10 py-4 text-blue-400 font-semibold"
+        >
+          <li><a class="hover:text-sky-300" href="#home">Home</a></li>
+          <li><a class="hover:text-sky-300" href="#about">About</a></li>
+          <li><a class="hover:text-sky-300" href="#services">Services</a></li>
+          <li><a class="hover:text-sky-300" href="#Samples">Samples</a></li>
+          <li><a class="hover:text-sky-300" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- ===== HEADER / NAVIGATION ===== -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#Samples">Samples</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- ===== HOME SECTION ===== -->
+    <section id="home" class="scroll-mt-24">
+      <div
+        class="max-w-7xl mx-auto px-4 py-20 md:py-24 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="order-2 md:order-1 space-y-4">
+          <h1 class="text-4xl md:text-5xl font-bold">
+            Hi, I'm <span class="text-blue-500">Nourssin</span>
+          </h1>
+          <h2 class="text-lg md:text-xl text-sky-300">
+            Voice Over &amp; Web Developer
+          </h2>
+          <p class="text-gray-300">
+            Welcome to my personal portfolio! I create unique digital
+            experiences with voice and web development.
+          </p>
 
-  <!-- ===== HOME SECTION ===== -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <h1>Hi, I'm <span>Nourssin</span></h1>
-      <h2>Voice Over & Web Developer</h2>
-      <p>Welcome to my personal portfolio! I create unique digital experiences with voice and web development.</p>
-
-      <div class="buttons">
-        <a href="#contact" class="btn hire">Hire Me</a>
-        <a href="files/Nourssin-CV.pdf" class="btn" download>Download CV</a>
-
+          <div class="flex gap-3 flex-wrap">
+            <a
+              href="#contact"
+              class="inline-flex items-center px-5 py-2 rounded-full border-2 border-blue-500 text-white hover:bg-blue-500 hover:text-black transition"
+              >Hire Me</a
+            >
+            <a
+              href="files/Nourssin-CV.pdf"
+              download
+              class="inline-flex items-center px-5 py-2 rounded-full border-2 border-blue-500 text-white hover:bg-blue-500 hover:text-black transition"
+              >Download CV</a
+            >
+          </div>
+        </div>
+        <div class="order-1 md:order-2 flex justify-center">
+          <img
+            src="images/profile.png"
+            alt="Nourssin Profile"
+            class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover ring-4 ring-blue-500 shadow-lg transition hover:scale-105 hover:rotate-1"
+          />
+        </div>
       </div>
-    </div>
-    <div class="home-img">
-      <img src="images/profile.png" alt="Nourssin Profile">
-    </div>
-  </section>
+    </section>
 
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="scroll-mt-24 bg-zinc-950">
+      <div
+        class="max-w-7xl mx-auto px-4 py-20 md:py-24 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="flex justify-center">
+          <img
+            src="images/nourssin-about.png"
+            alt="Nourssin About Photo"
+            class="w-64 h-64 md:w-72 md:h-72 rounded-full object-cover ring-4 ring-blue-500 shadow-lg"
+          />
+        </div>
+        <div class="space-y-4">
+          <h2 class="text-3xl md:text-4xl font-bold text-blue-500">About Me</h2>
+          <p class="text-gray-300">
+            Hello! I'm <strong>Nourssin</strong>, 23 years old — a beginner
+            <strong>Web Developer</strong> and a passionate
+            <strong>Voice Over Artist</strong>. I love blending art and
+            technology to create meaningful experiences.
+          </p>
+          <p class="text-gray-300">
+            I have completed <strong>AI Starter Kit</strong> and
+            <strong>Professional Foundation</strong> training, and I’m currently
+            studying <strong>Front-End Development</strong>. When I’m not coding
+            or recording, I enjoy exploring new ideas and helping others express
+            themselves through technology.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="scroll-mt-24 bg-zinc-900">
+      <div class="max-w-7xl mx-auto px-4 py-20 md:py-24">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-blue-500 mb-10"
+        >
+          My Services
+        </h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Voice Over -->
+          <div
+            class="bg-zinc-800 rounded-2xl p-6 border border-zinc-700 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/20"
+          >
+            <h3 class="text-sky-300 text-xl font-semibold mb-2">Voice Over</h3>
+            <p class="text-gray-300">
+              Professional voice recordings for ads, videos, podcasts, and more.
+              Languages:
+              <strong>Amazigh, French, English, Arabic, Darija</strong>.
+            </p>
+          </div>
 
-  <!-- ===== ABOUT SECTION ===== -->
- <section id="about" class="about">
-  <div class="about-content">
-    
-    <!-- الصورة فاليسار -->
-    <div class="about-img">
-      <img src="images/nourssin-about.png" alt="Nourssin About Photo">
-    </div>
+          <!-- Web Development -->
+          <div
+            class="bg-zinc-800 rounded-2xl p-6 border border-zinc-700 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/20"
+          >
+            <h3 class="text-sky-300 text-xl font-semibold mb-2">
+              Web Development
+            </h3>
+            <p class="text-gray-300">
+              Modern, responsive websites and web apps with clean code and great
+              UX/UI. Currently focusing on Front-End development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- النص فاليمين -->
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Hello! I'm <strong>Nourssin</strong>, 23 years old — a beginner <strong>Web Developer</strong> and a passionate <strong>Voice Over Artist</strong>.  
-        I love blending art and technology to create meaningful experiences.
-      </p>
-      <p>
-        I have completed <strong>AI Starter Kit</strong> and <strong>Professional Foundation</strong> training, and I’m currently studying <strong>Front-End Development</strong>.  
-        When I’m not coding or recording, I enjoy exploring new ideas and helping others express themselves through technology.
-      </p>
-    </div>
+    <!-- ===== VOICE OVER VIDEOS SECTION ===== -->
+    <section id="Samples" class="scroll-mt-24 bg-zinc-900">
+      <div class="max-w-7xl mx-auto px-4 py-20 md:py-24">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-blue-500 mb-10"
+        >
+          Voice Over Samples
+        </h2>
+        <div
+          class="grid gap-6 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
+          <!-- French Sample -->
+          <div class="relative group">
+            <span
+              class="absolute top-2 left-2 z-10 bg-blue-600/80 text-white text-xs px-2 py-1 rounded-md"
+              >French</span
+            >
+            <video
+              controls
+              class="w-72 h-48 rounded-xl border-2 border-blue-500 object-cover shadow-md transition group-hover:-translate-y-1"
+            >
+              <source src="video/frensh.MP4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
-  </div>
-</section>
+          <!-- Darija Sample -->
+          <div class="relative group">
+            <span
+              class="absolute top-2 left-2 z-10 bg-blue-600/80 text-white text-xs px-2 py-1 rounded-md"
+              >Darija</span
+            >
+            <video
+              controls
+              class="w-72 h-48 rounded-xl border-2 border-blue-500 object-cover shadow-md transition group-hover:-translate-y-1"
+            >
+              <source src="video/fsia.MP4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
+          <!-- Darija Sample 2 -->
+          <div class="relative group">
+            <span
+              class="absolute top-2 left-2 z-10 bg-blue-600/80 text-white text-xs px-2 py-1 rounded-md"
+              >Darija</span
+            >
+            <video
+              controls
+              class="w-72 h-48 rounded-xl border-2 border-blue-500 object-cover shadow-md transition group-hover:-translate-y-1"
+            >
+              <source src="video/darija.MP4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
+          <!-- Arabic Sample -->
+          <div class="relative group">
+            <span
+              class="absolute top-2 left-2 z-10 bg-blue-600/80 text-white text-xs px-2 py-1 rounded-md"
+              >Arabic</span
+            >
+            <video
+              controls
+              class="w-72 h-48 rounded-xl border-2 border-blue-500 object-cover shadow-md transition group-hover:-translate-y-1"
+            >
+              <source src="video/arabic.MP4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="scroll-mt-24 bg-zinc-950">
+      <div class="max-w-7xl mx-auto px-4 py-20 md:py-24 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-500 mb-4">
+          Contact Me
+        </h2>
+        <p class="text-gray-300 mb-6">
+          Send me a message or email me at
+          <a
+            class="text-blue-400 hover:text-sky-300 underline"
+            href="mailto:nourssin0125@gmail.com"
+            >nourssin0125@gmail.com</a
+          >
+        </p>
+        <form class="max-w-md mx-auto grid gap-4">
+          <input
+            type="text"
+            placeholder="Your Name"
+            required
+            class="w-full px-4 py-2 rounded-lg bg-zinc-800 border border-zinc-700 text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            required
+            class="w-full px-4 py-2 rounded-lg bg-zinc-800 border border-zinc-700 text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <textarea
+            placeholder="Your Message"
+            rows="5"
+            required
+            class="w-full px-4 py-2 rounded-lg bg-zinc-800 border border-zinc-700 text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          ></textarea>
+          <button
+            type="submit"
+            class="justify-self-center inline-flex items-center px-6 py-2 rounded-full border-2 border-blue-500 text-white hover:bg-blue-500 hover:text-black transition font-semibold"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
 
-
-  <!-- ===== SERVICES SECTION ===== -->
-  <section id="services" class="services">
-  <h2>My Services</h2>
-  
-  <div class="service-cards">
-
-    <!-- Voice Over -->
-    <div class="card">
-      <h3>Voice Over</h3>
-      <p>
-        Professional voice recordings for ads, videos, podcasts, and more.  
-        Languages: <strong>Amazigh, French, English, Arabic, Darija</strong>.
-      </p>
-    </div>
-
-    <!-- Web Development -->
-    <div class="card">
-      <h3>Web Development</h3>
-      <p>
-        Modern, responsive websites and web apps with clean code and great UX/UI.  
-        Currently focusing on Front-End development.
-      </p>
-    </div>
-
-  </div>
-</section>
-<!-- ===== VOICE OVER VIDEOS SECTION ===== -->
-<section id="Samples" class="voice-over">
-  <h2>Voice Over Samples</h2>
-
-  <div class="video">
-    <!-- French Sample -->
-    <div class="video-card">
-      <h3>French</h3>
-      <video controls>
-        <source src="video/frensh.MP4" type="video/mp4">
-      </video>
-    </div>
-
-    <!-- Darija Sample -->
-    <div class="video-card">
-      <h3>Darija</h3>
-      <video controls>
-        <source src="video/fsia.MP4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <div class="video-card">
-      <h3>Darija</h3>
-      <video controls>
-        <source src="video/darija.MP4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <!-- Arabic Sample -->
-    <div class="video-card">
-      <h3>Arabic</h3>
-      <video controls>
-        <source src="video/arabic.MP4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
-</section>
-
-  <!-- ===== CONTACT SECTION ===== -->
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <p>Send me a message or email me at <a href="mailto:nourssin0125@gmail.com">nourssin0125@gmail.com</a></p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
- 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <p>Connect with me:</p>
-  <div class="footer-socials">
-    <a href="https://www.linkedin.com/in/noura-abidar" target="_blank"><i class="fab fa-linkedin"></i></a> 
-    <a href="https://github.com/Nourssin" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://x.com/Nourssin261505" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.instagram.com/nour.ssin.08" target="_blank"><i class="fab fa-instagram"></i></a>
-  </div>
-  <p>&copy; 2025 Nourssin. All rights reserved.</p>
-</footer>
-
-</body>
+    <!-- ===== FOOTER ===== -->
+    <footer class="mt-auto bg-black text-white border-t border-blue-600">
+      <div class="max-w-7xl mx-auto px-4 py-10 text-center">
+        <p class="mb-4">Connect with me:</p>
+        <div class="flex justify-center gap-6 text-2xl mb-4">
+          <a
+            href="https://www.linkedin.com/in/noura-abidar"
+            target="_blank"
+            class="text-blue-500 hover:text-sky-300 transition"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/Nourssin"
+            target="_blank"
+            class="text-blue-500 hover:text-sky-300 transition"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://x.com/Nourssin261505"
+            target="_blank"
+            class="text-blue-500 hover:text-sky-300 transition"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/nour.ssin.08"
+            target="_blank"
+            class="text-blue-500 hover:text-sky-300 transition"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p class="text-sm text-gray-400">
+          &copy; 2025 Nourssin. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
-
